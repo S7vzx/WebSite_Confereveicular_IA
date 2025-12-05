@@ -98,7 +98,7 @@ const Header = () => {
               item === "Contato" ? (
                 <a
                   key={item}
-                  href={`https://wa.me/5511921021578?text=${encodeURIComponent("Olá! Gostaria de entrar em contato para mais informações sobre os serviços.")}`}
+                  href={`https://wa.me/5519996674425?text=${encodeURIComponent("Olá! Gostaria de entrar em contato para mais informações sobre os serviços.")}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-accent hover:text-accent/80 transition-colors text-sm font-medium"
@@ -143,7 +143,7 @@ const Header = () => {
                   item === "Contato" ? (
                     <a
                       key={item}
-                      href={`https://wa.me/5511921021578?text=${encodeURIComponent("Olá! Gostaria de entrar em contato para mais informações sobre os serviços.")}`}
+                      href={`https://wa.me/5519996674425?text=${encodeURIComponent("Olá! Gostaria de entrar em contato para mais informações sobre os serviços.")}`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-left text-accent hover:text-accent/80 transition-colors text-lg font-medium py-2"

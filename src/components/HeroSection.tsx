@@ -128,7 +128,7 @@ const HeroSection = memo(() => {
                   asChild
                 >
                   <a
-                    href={`https://wa.me/5511921021578?text=${encodeURIComponent(`Olá! Gostaria de fazer uma consulta veicular para: ${inputValue.trim() || "..."}`)}`}
+                    href={`https://wa.me/5519996674425?text=${encodeURIComponent(`Olá! Gostaria de fazer uma consulta veicular para: ${inputValue.trim() || "..."}`)}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={(e) => {

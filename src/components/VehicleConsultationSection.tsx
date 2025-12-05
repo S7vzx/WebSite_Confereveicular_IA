@@ -492,7 +492,7 @@ const VehicleConsultationSection = memo(() => {
                     className="w-full sm:flex-1 inline-flex items-center justify-center gap-1 bg-primary hover:bg-primary/90 text-white font-bold py-2 px-3 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] h-10 text-sm"
                   >
                     <a
-                      href={`https://wa.me/5511921021578?text=${encodeURIComponent(
+                      href={`https://wa.me/5519996674425?text=${encodeURIComponent(
                         (() => {
                           const messages: Record<string, string> = {
                             "placa": "Olá, gostaria de consultar uma placa!",

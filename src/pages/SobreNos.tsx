@@ -309,7 +309,7 @@ const SobreNos = () => {
                       asChild
                     >
                       <a
-                        href={`https://wa.me/5511921021578?text=${encodeURIComponent("Olá! Gostaria de fazer uma consulta veicular!")}`}
+                        href={`https://wa.me/5519996674425?text=${encodeURIComponent("Olá! Gostaria de fazer uma consulta veicular!")}`}
                         target="_blank"
                         rel="noopener noreferrer"
                       >

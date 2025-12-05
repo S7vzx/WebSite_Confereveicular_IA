@@ -103,7 +103,7 @@ const Footer = () => {
   };
 
   const openWhatsApp = (message: string) => {
-    const phoneNumber = "5511921021578";
+    const phoneNumber = "5519996674425";
     // Try multiple WhatsApp URL variations (same as VehicleConsultationSection)
     const urls = [
       `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`,
@@ -198,7 +198,7 @@ const Footer = () => {
                     </button>
                   ) : link.type === "whatsapp" ? (
                     <a
-                      href={`https://wa.me/5511921021578?text=${encodeURIComponent("Olá! Gostaria de entrar em contato para mais informações sobre os serviços.")}`}
+                      href={`https://wa.me/5519996674425?text=${encodeURIComponent("Olá! Gostaria de entrar em contato para mais informações sobre os serviços.")}`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-muted-foreground hover:text-primary transition-colors text-sm hover:underline text-left"
@@ -225,7 +225,7 @@ const Footer = () => {
               {footerLinks.servicos.map((service, index) => (
                 <li key={index}>
                   <a
-                    href={`https://wa.me/5511921021578?text=${encodeURIComponent(service.whatsappMessage)}`}
+                    href={`https://wa.me/5519996674425?text=${encodeURIComponent(service.whatsappMessage)}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-muted-foreground hover:text-accent transition-colors text-sm hover:underline text-left"
@@ -248,7 +248,7 @@ const Footer = () => {
                 </div>
                 <div className="flex items-center gap-2">
                   <Phone className="h-4 w-4 text-accent flex-shrink-0" />
-                  <span>(11) 92102-1578</span>
+                  <span>(19) 99667-4425</span>
                 </div>
                 <div className="flex items-start gap-2">
                   <MapPin className="h-4 w-4 text-accent flex-shrink-0 mt-0.5" />
@@ -337,7 +337,7 @@ const Footer = () => {
                           {link.name}
                         </button>
                       ) : link.type === "whatsapp" ? (
-                        <a href={`https://wa.me/5511921021578?text=${encodeURIComponent("Olá! Gostaria de entrar em contato.")}`} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary text-sm w-full text-left block py-1">
+                        <a href={`https://wa.me/5519996674425?text=${encodeURIComponent("Olá! Gostaria de entrar em contato.")}`} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary text-sm w-full text-left block py-1">
                           {link.name}
                         </a>
                       ) : (
@@ -358,7 +358,7 @@ const Footer = () => {
                   {footerLinks.servicos.map((service, index) => (
                     <li key={index}>
                       <a
-                        href={`https://wa.me/5511921021578?text=${encodeURIComponent(service.whatsappMessage)}`}
+                        href={`https://wa.me/5519996674425?text=${encodeURIComponent(service.whatsappMessage)}`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-muted-foreground hover:text-accent text-sm w-full text-left block py-1"
@@ -381,7 +381,7 @@ const Footer = () => {
                   </div>
                   <div className="flex items-center gap-3">
                     <Phone className="h-4 w-4 text-accent flex-shrink-0" />
-                    <span>(11) 92102-1578</span>
+                    <span>(19) 99667-4425</span>
                   </div>
                   <div className="flex items-start gap-3">
                     <MapPin className="h-4 w-4 text-accent flex-shrink-0 mt-0.5" />
