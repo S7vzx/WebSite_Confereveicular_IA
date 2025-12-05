@@ -1,0 +1,264 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* ConfereVeicular Design System - Paleta Principal (Azul Dominante) */
+    --background: 193 14% 93%; /* #ECF0F1 - Cinza Claro */
+    --foreground: 212 63% 26%; /* #1A3C6D - Azul Escuro */
+
+    --card: 0 0% 100%; /* #FFFFFF - Branco */
+    --card-foreground: 212 63% 26%; /* #1A3C6D - Azul Escuro */
+
+    --popover: 0 0% 100%; /* #FFFFFF */
+    --popover-foreground: 212 63% 26%; /* #1A3C6D */
+
+    /* Azul Escuro Principal - botões principais, títulos */
+    --primary: 212 63% 26%; /* #1A3C6D */
+    --primary-foreground: 0 0% 100%; /* #FFFFFF */
+    
+    /* Azul Suave Secundário - links, hover, ícones secundários */
+    --secondary: 200 68% 63%; /* #5DADE2 */
+    --secondary-foreground: 0 0% 100%; /* #FFFFFF */
+
+    /* Cinza neutro para elementos sutis */
+    --muted: 193 14% 93%; /* #ECF0F1 - Cinza Claro */
+    --muted-foreground: 225 8% 68%; /* #ADAEB1 - Cinza para subtextos */
+
+    /* Verde Água (Turquesa) - acento, feedback, sucesso */
+    --accent: 168 76% 42%; /* #1ABC9C */
+    --accent-foreground: 0 0% 100%; /* #FFFFFF */
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 193 14% 88%; /* Tom mais escuro do cinza claro */
+    --input: 193 14% 88%;
+    --ring: 212 63% 26%; /* #1A3C6D */
+
+    /* Custom automotive theme colors */
+    --hero-bg: 193 14% 93%; /* #ECF0F1 */
+    --info-section-bg: 193 14% 93%; /* #ECF0F1 */
+    --card-shadow: 193 14% 80%;
+    --success: 168 76% 42%; /* #1ABC9C - Verde Água */
+    --success-foreground: 0 0% 100%; /* #FFFFFF */
+
+    /* Soft Shadow System - Sombras mais fluidas e naturais */
+    --shadow-soft: 0 2px 8px -2px hsl(var(--card-shadow) / 0.1), 0 4px 20px -4px hsl(var(--card-shadow) / 0.08);
+    --shadow-medium: 0 4px 20px -4px hsl(var(--card-shadow) / 0.15), 0 8px 40px -8px hsl(var(--card-shadow) / 0.12);
+    --shadow-large: 0 8px 40px -8px hsl(var(--card-shadow) / 0.2), 0 16px 60px -16px hsl(var(--card-shadow) / 0.15);
+    --shadow-extra-large: 0 16px 60px -16px hsl(var(--card-shadow) / 0.25), 0 32px 120px -32px hsl(var(--card-shadow) / 0.2);
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  /* Paleta Alternativa - Verde Água Dominante */
+  .turquoise-theme {
+    --background: 168 30% 95%; /* #F0FDFA - Verde água muito claro */
+    --foreground: 168 76% 25%; /* #0F766E - Verde água escuro */
+
+    --card: 0 0% 100%; /* #FFFFFF - Branco */
+    --card-foreground: 168 76% 25%; /* #0F766E - Verde água escuro */
+
+    --popover: 0 0% 100%; /* #FFFFFF */
+    --popover-foreground: 168 76% 25%; /* #0F766E */
+
+    /* Verde Água Principal - botões principais, títulos */
+    --primary: 168 76% 42%; /* #1ABC9C */
+    --primary-foreground: 0 0% 100%; /* #FFFFFF */
+    
+    /* Azul Suave como Secundário - mescla harmoniosa */
+    --secondary: 185 60% 55%; /* #4ECDC4 - Azul-verde */
+    --secondary-foreground: 0 0% 100%; /* #FFFFFF */
+
+    /* Verde água suave para elementos neutros */
+    --muted: 168 30% 95%; /* #F0FDFA - Verde água muito claro */
+    --muted-foreground: 225 8% 68%; /* #ADAEB1 - Cinza para subtextos */
+
+    /* Azul como acento - inverte o papel */
+    --accent: 212 63% 35%; /* #2563EB - Azul mais vibrante */
+    --accent-foreground: 0 0% 100%; /* #FFFFFF */
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 168 30% 88%; /* Tom mais escuro do verde água claro */
+    --input: 168 30% 88%;
+    --ring: 168 76% 42%; /* #1ABC9C */
+
+    /* Custom automotive theme colors - tema turquesa */
+    --hero-bg: 168 30% 95%; /* #F0FDFA */
+    --info-section-bg: 168 30% 95%; /* #F0FDFA */
+    --card-shadow: 168 30% 80%;
+    --success: 168 76% 42%; /* #1ABC9C - Verde Água */
+    --success-foreground: 0 0% 100%; /* #FFFFFF */
+  }
+
+  .dark {
+    /* Dark mode - Paleta Azul Dominante */
+    --background: 212 63% 8%; /* Versão escura do azul escuro */
+    --foreground: 200 68% 85%; /* Versão clara do azul suave */
+
+    --card: 212 63% 12%;
+    --card-foreground: 200 68% 85%;
+
+    --popover: 212 63% 12%;
+    --popover-foreground: 200 68% 85%;
+
+    --primary: 200 68% 70%; /* #5DADE2 mais claro para dark mode */
+    --primary-foreground: 212 63% 8%;
+
+    --secondary: 200 68% 50%; /* Azul suave mais escuro */
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 212 63% 12%;
+    --muted-foreground: 200 68% 65%;
+
+    --accent: 168 76% 55%; /* Verde água mais claro */
+    --accent-foreground: 212 63% 8%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 212 63% 18%;
+    --input: 212 63% 18%;
+    --ring: 200 68% 70%;
+    
+    --hero-bg: 212 63% 6%;
+    --info-section-bg: 212 63% 10%;
+    --card-shadow: 212 40% 15%;
+    --success: 168 76% 55%; /* Verde água mais claro */
+    --success-foreground: 212 63% 8%;
+
+    /* Dark mode soft shadows */
+    --shadow-soft: 0 2px 8px -2px hsl(var(--card-shadow) / 0.2), 0 4px 20px -4px hsl(var(--card-shadow) / 0.15);
+    --shadow-medium: 0 4px 20px -4px hsl(var(--card-shadow) / 0.25), 0 8px 40px -8px hsl(var(--card-shadow) / 0.2);
+    --shadow-large: 0 8px 40px -8px hsl(var(--card-shadow) / 0.3), 0 16px 60px -16px hsl(var(--card-shadow) / 0.25);
+    --shadow-extra-large: 0 16px 60px -16px hsl(var(--card-shadow) / 0.35), 0 32px 120px -32px hsl(var(--card-shadow) / 0.3);
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  /* Dark mode para tema turquesa */
+  .dark.turquoise-theme {
+    --background: 168 76% 8%; /* Verde água muito escuro */
+    --foreground: 168 30% 85%; /* Verde água claro */
+
+    --card: 168 76% 12%;
+    --card-foreground: 168 30% 85%;
+
+    --popover: 168 76% 12%;
+    --popover-foreground: 168 30% 85%;
+
+    --primary: 168 76% 60%; /* Verde água mais claro */
+    --primary-foreground: 168 76% 8%;
+
+    --secondary: 185 60% 45%; /* Azul-verde mais escuro */
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 168 76% 12%;
+    --muted-foreground: 168 30% 65%;
+
+    --accent: 212 63% 55%; /* Azul mais claro para dark mode */
+    --accent-foreground: 168 76% 8%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 168 76% 18%;
+    --input: 168 76% 18%;
+    --ring: 168 76% 60%;
+    
+    --hero-bg: 168 76% 6%;
+    --info-section-bg: 168 76% 10%;
+    --card-shadow: 168 50% 15%;
+    --success: 168 76% 60%;
+    --success-foreground: 168 76% 8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-montserrat;
+    overflow-x: hidden; /* Previne scroll horizontal em dispositivos móveis */
+  }
+
+  /* Utility classes for the new shadow system */
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+
+  .shadow-medium {
+    box-shadow: var(--shadow-medium);
+  }
+
+  .shadow-large {
+    box-shadow: var(--shadow-large);
+  }
+
+  .shadow-extra-large {
+    box-shadow: var(--shadow-extra-large);
+  }
+
+  /* Custom Scrollbar - Azul ConfereVeicular */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--muted));
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: hsl(var(--primary));
+    border-radius: 4px;
+    transition: background 0.2s ease;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--secondary));
+  }
+
+  ::-webkit-scrollbar-corner {
+    background: hsl(var(--muted));
+  }
+
+  /* Firefox scrollbar */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: hsl(var(--primary)) hsl(var(--muted));
+  }
+}
